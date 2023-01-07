@@ -1,0 +1,22 @@
+{
+  "name": "coursera_my_interest_page_2023",
+  "version": "1.0.0",
+  "description": "This is a file to learn Git and Node by shakir from coursera",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shakirmsq/My_interest_page.git"
+  },
+  "author": "Mohammed Shakir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shakirmsq/My_interest_page/issues"
+  },
+  "homepage": "https://github.com/Shakirmsq/My_interest_page#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
