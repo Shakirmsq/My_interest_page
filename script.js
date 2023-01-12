@@ -2,35 +2,48 @@
 
 //Creating a button and calling JS function on the onclick event
 
-function dochange() {
+// function dochange() {
 
-    alert('Clicked Button');
-}
-
-
-function okcancell() {
+//     alert('Clicked Button');
+// }
 
 
-    confirm('Choose on option');
+// my practise button
 
-    var ans = confirm('Choose on option');
+// function nestedButton() {
+//     // alert('hello bro !');   
 
-    if (ans == true) {
-        alert("YOU PRESSED ok");
-    } else {
-        var mes = "Are you sure you want to cancel?";
-    }
-}
+//     // This line returns output ok or cancell externally, it is not used along side of Conditional Statements, only used inside of them.
+//     // confirm('hi bro !');
 
-function changecolor() {
-    var dd1 =
-        document.getElementById("d1");
-    var dd2 =
-        dochange.getElementById("d2");
+//     // return on basis of button click in alert box( ok, cancel).
+//     // this condition is applied on second nested alert box, if confirm method is called earlier.
+//     if (confirm("Press any button to proceed")) {
+//         alert('OK PRESSED !!');
+//     } else {
+//         alert('Are you sure to cancel !!');
+//     }
+// }
 
-    dd1.className = "blueback";
-    dd2.className = "yellowback";
-}
+
+
+
+
+
+
+
+
+
+
+// function changecolor() {
+//     var dd1 =
+//         document.getElementById("d1");
+//     var dd2 =
+//         document.getElementById("d2");
+
+//     dd1.className = "blueback";
+//     dd2.className = "yellowback";
+// }
 
 function changetext() {
     var dd1 =
@@ -39,6 +52,15 @@ function changetext() {
     var dd2 =
         document.getElementById("d2");
 
-    dd1.innerHTML = "Bonjour";
-    dd2.innerHTML = "Sayonara";
+    dd1.innerHTML = "Mi nombre es Mohammed Shakir, desarrollador de software asociado.";
+    dd2.innerHTML = "Développeur angulaire innovant avec une expérience complète dans les domaines de l'interface utilisateur / UX et de la conception, du développement frontal avec la volonté d'apprendre et maîtriser MongoDB et Express.js parallèlement à la programmation réactive. Expérience de niveau débutant en authentification, Bootstrap, jQuery, SASS, Node.js, Typescript et AngularJS.";
+}
+
+function resetTxt() {
+
+    var txt1 = document.getElementById("d1");
+    var txt2 = document.getElementById("d2");
+    txt1.innerHTML = "My Name is Mohammed Shakir, Associate Software Developer.";
+    txt2.innerHTML = "Innovative Angular Developer with comprehensive experience in UI/UX & Design, Front-end Development areas with willingness to learn and master MongoDB and Express.js alongside reactive programming. Beginner level experience in Authentication, Bootstrap, jQuery, SASS, Node.js, Typescript and AngularJS.";
+
 }

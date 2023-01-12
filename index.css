@@ -1,85 +1,352 @@
-/* default css
-
-$brandColor: darkorchid;
+/* css for my interest website */
 
 body {
-  font-family: system-ui;
-  background: linear-gradient(to bottom, $brandColor, darken($brandColor, 15%));
-  color: white;
-  height: 100vh;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  background-color: #F5F5F5;
- 
+    font-family: system-ui;
+    background-color: grey;
+    margin: 0px;
+    /* border: 2px solid red; */
+    place-items: center;
 }
 
-*/
+img {
+    pointer-events: none;
+}
 
-body {
-    background-color: #F5F5F5;
-    background-color: grey;
+a {
+    cursor: none;
+}
+
+.cursor-default {
+    cursor: url('https://i.postimg.cc/50W3HXH9/imgonline-com-ua-resize-E8t-W3c-Iw-LL0f.png'), url(foo.cur), auto;
+}
+
+@keyframes headMoving {
+    from {
+        padding-left: 50%;
+        color: rgb(255, 255, 255);
+    }
+    to {
+        padding-right: 50%;
+        color: rgb(0, 0, 0);
+    }
 }
 
 .page_headline {
-    background-color: white;
+    background-color: #a6a6a6;
     color: black;
+    padding: 20px;
+    /* border: 2px solid blue; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    animation: headMoving 9s 2s infinite;
+}
+
+
+/* ANIMATION OF NAVIGATION */
+
+@keyframes navAnime {
+    from {
+        background-color: rgba(37, 35, 35, 0.495);
+    }
+    to {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.navcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 0pz;
+    background-color: rgba(245, 245, 245, 0.548);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 25px;
+}
+
+.navcontainer a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* border: 2px solid green; */
+    padding: 5px 10px 30px 10px;
+    border-radius: 4px;
+    font-size: large;
+    animation-name: navAnime;
+    animation-duration: 6s;
+}
+
+.navcontainer a:active {
+    color: lightblue;
+    font-size: larger;
+}
+
+.navcontainer div a {
+    text-decoration: none;
+    color: black;
+    /* border: 3px solid red; */
 }
 
 .page_head_section {
     background-color: #a6a6a6;
+    padding: 20px;
 }
 
 h2 {
     color: white;
+    margin-left: 20px;
 }
 
-.movie_container {
-    display: flex;
-    flex-flow: row wrap;
+#d2 {
+    background-color: #a6a6a6;
+    padding: 20px;
 }
 
-.actor_container {
+#d1 {
+    color: rgb(255, 255, 255);
+    background-color: #a9a9a8;
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
 }
+
+h3 {
+    color: white;
+    margin-left: 20px;
+}
+
+.textConvert {
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+}
+
+.lang-conv {
+    color: black;
+    background-color: grey;
+    border: none;
+    border-radius: 6px;
+}
+
+.textConvert input:hover {
+    color: #d6d1d1;
+}
+
+.textConvert input:active {
+    border-radius: 4px;
+    font-size: large;
+}
+
+
+/* CSS AFTER THE LINE:  what is your top5 */
+
+
+/* page mid Section */
+
+.mid_sec_head_para {
+    margin: 20px;
+}
+
+
+/* PLACES CSS */
 
 .places_container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
-    border: 2px solid red;
-    background-color: black;
 }
 
 .place_box {
     display: inline-block;
 }
 
-.ordered_lists_container {
+.place_box img {
+    border-radius: 50%;
+    color: black;
+}
+
+@media only screen and (max-width: 776px) {
+    .place_box img {
+        width: 240px;
+        height: 165px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .place_box img {
+        width: 185px;
+        height: 120px;
+    }
+}
+
+
+/* movies css */
+
+.movie_container {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.unordered_lists_container {
+.movie_box {
+    display: inline-block;
+}
+
+.movie_container img {
+    border-radius: 50%;
+    color: black;
+}
+
+@media only screen and (max-width: 776px) {
+    .movie_container img {
+        width: 248px;
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .movie_container img {
+        width: 190px;
+        height: 150px;
+    }
+}
+
+
+/* ACTORS CSS */
+
+.actor_container {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actor_box {
+    display: inline-block;
+}
+
+.actor_container img {
+    border-radius: 50%;
+    color: black;
+}
+
+@media only screen and (max-width: 776px) {
+    .actor_container img {
+        width: 230px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .actor_container img {
+        width: 170px;
+        height: 135px;
+    }
 }
 
 
-/* .lists_and_tables {} */
+/* MY HOBBIES */
 
-h3 {
-    /*   background-color: black; */
-    color: white;
+.hobbies_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.yellowback {
-    background-color: yellow;
-    color: blue;
+.hobbies_box {
+    display: inline-block;
 }
 
-.blueback {
-    background-attachment: lightblue;
-    border: 2px solid red;
+.hobbies_box img {
+    border-radius: 50%;
+    color: black;
+}
+
+@media only screen and (max-width: 776px) {
+    .hobbies_box img {
+        width: 175px;
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .hobbies_box img {
+        width: 120px;
+        height: 95px;
+    }
+}
+
+
+/* My fav Quotes */
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    margin: 10px;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/* Add some padding inside the card container */
+
+.container {
+    padding: 2px 16px;
+}
+
+.tables_fav_websites {
+    margin-bottom: 10rem;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.tables_fav_websites a {
+    color: rgb(255, 255, 255);
+}
+
+.tables_fav_websites a:hover {
+    color: black;
+}
+
+.tables_fav_websites a:active {
+    font-size: large;
+}
+
+.tables_fav_websites a::after {
+    color: aqua;
+}
+
+table {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+table td {
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+table th {
+    padding-right: 40px;
+}
+
+.footer {
+    margin: 40px;
 }

@@ -10,15 +10,27 @@
     <title> Mohammed Shakir's Interests </title>
 </head>
 
-<body>
+<body class="cursor-default" channel="0">
+
 
     <h1 class="page_headline">
-        The Page of Mohammed Shakir Interests
+        <!-- The Page of Mohammed Shakir <em>Interests</em> -->
+        Shakir's Interests: A Closer LOOK!
     </h1>
 
 
+    <div class="navcontainer">
+
+        <div class="box"> <a href="#Home">Home</a></div>
+        <div class="box"> <a href="#Qoutes">Qoutes</a></div>
+        <div class="box"> <a href="#Hobbies">Hobbies</a></div>
+        <div class="box"> <a href="#Contact">Contact</a></div>
+
+    </div>
+
+
     <div class=page_head_section>
-        <h2>
+        <h2 id="Home">
             The World wants to know :
         </h2>
         <p>
@@ -27,38 +39,48 @@
     </div>
 
     <!--  Button and PopUps -->
-    <div class="button-container">
-        <div class="button-box">
-            <!-- basic alert button only in html -->
-            <input type="button" id="button01" value="ALERT" onclick="alert('please help mess')">
+    <!-- <div class="button-container"> -->
 
-        </div>
-        <div class="button-box">
-            <!-- Calling a JS function -->
-            <input type="button" id="button02" value="change" onclick="dochange()">
-        </div>
-        <div class="button-box">
-            <!-- ok and Cancell option in alert -->
-            <input type="button" id="button03" value="CONFIRM" onclick="okcancell()">
-        </div>
-    </div>
+    <!-- <div class="button-box"> -->
+    <!-- Calling a JS function -->
+    <!-- <input type="button" id="button02" value="Invert Color" onclick="dochange()">
+        </div> -->
+    <!-- my practise button or NESTED button which return values even after the alert box button pressed -->
+    <!-- <div class="button-box">
+            <p>
+                <input type="button" id="button04" value="nestedButton" onclick="nestedButton()">
+            </p>
+        </div> -->
+    <!-- </div> -->
 
     <!-- Changing CSS class by ID -->
     <div class="change-interactively-container">
         <div id="d1">
-            Hello !!
+            My Name is Mohammed Shakir, Associate Software Developer.
         </div>
         <div id="d2">
-            Goodbye bro
+            Innovative Angular Developer with comprehensive experience in UI/UX & Design, Front-end Development areas with willingness to learn and master MongoDB and Express.js alongside reactive programming. Beginner level experience in Authentication, Bootstrap,
+            jQuery, SASS, Node.js, Typescript and AngularJS.
+
         </div>
-        <p>
-            <input type="button" value="color change" onclick="changecolor()">
-            <!-- Change HTML TEXT -->
 
-            <input type="button" value="text change" onclick="changetext()">
+        <div class="textConvert">
+            <p>
+                <!-- Change HTML background Color -->
+                <!-- <input type="button" value="color change" onclick="changecolor()"> -->
 
-        </p>
+                <!-- Change HTML TEXT -->
+                <input type="button" value="French" class="lang-conv" id="lang-conv01" onclick="changetext()">
 
+
+            </p>
+            <p>
+                <!-- Other Aspects of web page change by JavaScript button , when it is clicked. -->
+                <input type="button" value="English" class="lang-conv" id="lang-conv02" onclick="resetTxt()">
+
+            </p>
+
+        </div>
     </div>
 
     <div class="page_mid_section">
@@ -67,32 +89,86 @@
         <h2>
             What is your top 5 ?
         </h2>
-        <p>
-            <b> Shakir <em>was recently asked about his top 5</em> movies, actors, places and books. Here are the answers !</b>
-        </p>
+        <div class="mid_sec_head_para">
+            <p>
+                <b> Shakir <em>was recently asked about his top 5</em> movies, actors, places and books. Here are the answers !</b>
+            </p>
+        </div>
+
 
         <!-- Task = 01 :  Images and Movies -->
+
+
+        <h3>Places </h3>
+
+
+        <div class="places_container">
+
+            <div class="place_box" id="place_box01">
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/R0n44zmM/Place-01-pic.jpg' width="300px" height="200px" border='1' alt='Place-01-pic' /></a>
+                <p>
+                    THE TAJ MAHAL
+                </p>
+            </div>
+
+            <div class="place_box" id="place_box02">
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/tRLXvJGB/Place-02-pic.jpg' width="300px" height="200px" border='1' alt='Place-02-pic' /></a>
+                <p>
+                    THE RED FORT
+                </p>
+            </div>
+
+            <div class="place_box" id="place_box03">
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XvVNKP63/Place-03-pic.jpg' width="300px" height="200px" border='1' alt='Place-03-pic' /></a><br />
+                <a href='https://postimages.org/'></a>
+
+                <P>
+                    THE STATUE OF UNITY
+                </P>
+            </div>
+            <div class="place_box" id="place_box04">
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/mhf1TSzD/Place-04-pic.jpg' width="300px" height="200px" border='1' alt='Place-04-pic' /></a>
+                <p>
+                    THE STATUE OF LIBERTY
+                </p>
+            </div>
+
+        </div>
+
+
 
         <h3>Movies </h3>
 
         <div class="movie_container">
 
-            <div class="movie_box01">
+            <div class="movie_box">
                 <a href='https://postimages.org/' target='_blank'>
-                    <img src='https://i.postimg.cc/xdh9H46s/image-02-pic.jpg' width="300px" height="300px" border='0' alt='image-02-pic' /></a>
+                    <img src='https://i.postimg.cc/xdh9H46s/image-02-pic.jpg' width="300px" height="280px" border='1' alt='image-02-pic' /></a>
+                <p>
+                    THE JURASSIC PARK
+                </p>
             </div>
-            <div class="movie_box02">
+            <div class="movie_box">
                 <a href='https://postimages.org/' target='_blank'>
-                    <img src='https://i.postimg.cc/vmKbwN9r/marcin-lukasik-u-Yp-OYy-Jdh-RE-unsplash.jpg' width="300px" height="300px" border='0' alt='marcin-lukasik-u-Yp-OYy-Jdh-RE-unsplash' /></a>
+                    <img src='https://i.postimg.cc/vmKbwN9r/marcin-lukasik-u-Yp-OYy-Jdh-RE-unsplash.jpg' width="300px" height="280px" border='1' alt='marcin-lukasik-u-Yp-OYy-Jdh-RE-unsplash' /></a>
+                <p>
+                    BATMAN
+                </p>
             </div>
-            <div class="movie_box03">
+            <div class="movie_box">
 
                 <a href='https://postimages.org/' target='_blank'>
-                    <img src='https://i.postimg.cc/Zq0Q8Ygm/movie-01-pic.jpg' width="300px" height="300px" border='0' alt='movie-01-pic' /></a>
+                    <img src='https://i.postimg.cc/Zq0Q8Ygm/movie-01-pic.jpg' width="300px" height="280px" border='1' alt='movie-01-pic' /></a>
+                <p>
+                    ROPE !
+                </p>
             </div>
-            <div class="movie_box04">
+            <div class="movie_box">
                 <a href='https://postimages.org/' target='_blank'>
-                    <img src='https://i.postimg.cc/Hs8WWH3r/format-arw-PXj-Qa-Gxi4-JA-unsplash.jpg' width="300px" height="300px" border='0' alt='format-arw-PXj-Qa-Gxi4-JA-unsplash' /></a>
+                    <img src='https://i.postimg.cc/Hs8WWH3r/format-arw-PXj-Qa-Gxi4-JA-unsplash.jpg' width="300px" height="280px" border='1' alt='format-arw-PXj-Qa-Gxi4-JA-unsplash' /></a>
+                <p>
+                    SPIDERMAN
+                </p>
             </div>
 
         </div>
@@ -104,51 +180,37 @@
         <div class="actor_container">
 
             <div class="actor_box" id="actor_box01">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Z5rf67JT/actor-04-pic.jpg' border='0' alt='actor-04-pic' /></a>
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Z5rf67JT/actor-04-pic.jpg' width="300px" height="230px" border='3' alt='actor-04-pic' /></a>
+                <p>
+                    Leonardo DiCaprio
+                </p>
             </div>
 
             <div class="actor_box" id="actor_box02">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/0jYf7rqV/actor-05-pic.jpg' border='0' alt='actor-05-pic' /></a>
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/0jYf7rqV/actor-05-pic.jpg' width="300px" height="230px" border='3' alt='actor-05-pic' /></a>
                 <!--       <br /><a href='https://postimages.org/'></a><br /> -->
+                <p>
+                    Johnny Depp
+                </p>
             </div>
 
             <div class="actor_box" id="actor_box03">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/QMKcpVQc/actor-01-pic.jpg' border='0' alt='actor-01-pic' /></a>
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/QMKcpVQc/actor-01-pic.jpg' width="300px" height="230px" border='3' alt='actor-01-pic' /></a>
                 <!--       <br /><a href='https://postimages.org/'></a><br /> -->
+                <p>
+                    Christian Bale
+                </p>
             </div>
 
             <div class="actor_box" id="actor_box04">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/fRp9TZGy/actor-03-pic.jpg' border='0' alt='actor-03-pic' /></a>
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/fRp9TZGy/actor-03-pic.jpg' width="300px" height="230px" border='3' alt='actor-03-pic' /></a>
+                <p>
+                    Jackie Chan
+                </p>
             </div>
 
         </div>
 
-
-
-
-        <h3>Places </h3>
-
-
-        <div class="places_container">
-
-            <div class="place_box" id="place_box01">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/R0n44zmM/Place-01-pic.jpg' width="300px" height="200px" border='0' alt='Place-01-pic' /></a>
-            </div>
-
-            <div class="place_box" id="place_box02">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/tRLXvJGB/Place-02-pic.jpg' width="300px" height="200px" border='0' alt='Place-02-pic' /></a>
-            </div>
-
-            <div class="place_box" id="place_box03">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XvVNKP63/Place-03-pic.jpg' width="300px" height="200px" border='0' alt='Place-03-pic' /></a><br />
-                <a href='https://postimages.org/'></a>
-
-            </div>
-            <div class="place_box" id="place_box04">
-                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/mhf1TSzD/Place-04-pic.jpg' width="300px" height="200px" border='0' alt='Place-04-pic' /></a>
-            </div>
-
-        </div>
 
         <!-- Task 02 : List and Tables -->
 
@@ -181,8 +243,8 @@
                     <ol>
                         <h3> Top 5 Movies : </h3>
 
-                        <li>Rope</li>
-                        <li>Shutter Island</li>
+                        <li>Rope (1948)</li>
+                        <li>Shutter Island (2010) </li>
 
                         <li>The Batman</li>
                         <ol type="i">
@@ -196,7 +258,7 @@
                         </ol>
                         <li>Jurassic Park
                             <ol>
-                                <li>Jurassic Park</li>
+                                <li>Jurassic Park (1993)</li>
                                 <li>Jurassic World</li>
                                 <li>Jurassic World: Fallen Kingdom</li>
                             </ol>
@@ -207,40 +269,41 @@
                 </div>
 
 
-                <div class="unordered_lists_container" <ul>
-                    <h3> The places I would like to visit :</h3>
-                    <li>Saudi Arabia
-                        <ul>
-                            <li>
-                                Mecca
-                                <ul>
-                                    <li>
-                                        Hajj
-                                    </li>
-                                    <li>
-                                        Umrah
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Madina
-                                <ul>
-                                    <li>Mosque</li>
-                                    <li>Prayer</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Japan
-                        <ul>
-                            <li>Hiroshima</li>
-                            <li>Nagasaki</li>
-                            <li>Tokyo</li>
-                        </ul>
-                    </li>
-                    <li>South Korea</li>
-                    <li>Argentina</li>
-                    <li>Scotland</li>
+                <div class="unordered_lists_container">
+                    <ul>
+                        <h3> The places I would like to visit :</h3>
+                        <li>Saudi Arabia
+                            <ul>
+                                <li>
+                                    Mecca
+                                    <ul>
+                                        <li>
+                                            Hajj
+                                        </li>
+                                        <li>
+                                            Umrah
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Madina
+                                    <ul>
+                                        <li>Mosque</li>
+                                        <li>Prayer</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Japan
+                            <ul>
+                                <li>Hiroshima</li>
+                                <li>Nagasaki</li>
+                                <li>Tokyo</li>
+                            </ul>
+                        </li>
+                        <li>South Korea</li>
+                        <li>Argentina</li>
+                        <li>Scotland</li>
 
                     </ul>
                     <ul>
@@ -263,113 +326,151 @@
                     </ul>
 
                 </div>
+            </div>
+
+            <div class="tables_container">
 
 
-                <div class="tables_container">
+                <!-- Hobbies -->
+                <h3 id="Hobbies">My Hobbies: </h3>
+                <div class="hobbies_container">
 
-
-                    <div class="tables_fav_hobbies">
-                        <table>
-                            <h3> My Hobbies :</h3>
-                            <tr>
-                                <th>Cricket</th>
-                                <th>Chess</th>
-                                <th>Hiking</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="https://as2.ftcdn.net/v2/jpg/00/44/82/85/1000_F_44828508_8jXIuyDw6GjDX0OUvBWjt1mqzF0EdNyc.jpg" width="230px" height="185px">
-                                </td>
-                                <td>
-                                    <img src="https://www.publicdomainpictures.net/pictures/10000/velka/33-12366405825vaN.jpg" width="230px" height="185px">
-
-                                </td>
-                                <td>
-                                    <img src="https://as1.ftcdn.net/v2/jpg/01/07/95/76/1000_F_107957699_mkILzEpMnCDpolDZ2x3HjcX3Q0R0vY3Y.jpg" width="230px" height="185px">
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div <div class="tables_fav_quotes">
-                    <table>
-                        <h3>My Favourite Qoutes :</h3>
-                        <tr>
-                            <th>
-                                – Stephen King
-
-                            </th>
-                            <th>
-                                – Emily Dickinson
-                            </th>
-                            <th>
-                                – George Eliot
-                            </th>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                'Amateurs sit and wait for inspiration, the rest of us just get up and go to work.'
-
-                            </td>
-                            <td>
-                                'That it will never come again is what makes life so sweet.'
-                            </td>
-                            <td>
-                                'It is never too late to be what you might have been.'
-                            </td>
-
-                        </tr>
-
-                    </table>
-
+                    <div class="hobbies_box">
+                        <p>
+                            CRICKET
+                        </p>
+                        <a href='https://postimg.cc/8styjJ1J' target='_blank'><img src='https://i.postimg.cc/9FjsgZKp/pexels-jurie-maree-5519470.jpg' width="230px" height="185px" border='3' alt='pexels-jurie-maree-5519470' /></a>
+                    </div>
+                    <div class="hobbies_box">
+                        <p>
+                            CHESS
+                        </p>
+                        <a href='https://postimg.cc/VSmsGH2V' target='_blank'><img src='https://i.postimg.cc/R0n30kd4/pexels-pixabay-260024.jpg' width="230px" height="185px" border='3' alt='pexels-pixabay-260024' /></a>
+                    </div>
+                    <div class="hobbies_box">
+                        <p>
+                            HIKING
+                        </p>
+                        <a href='https://postimg.cc/PCZzzPkM' target='_blank'><img src='https://i.postimg.cc/bwVCPtC4/pexels-pixabay-48137.jpg' width="230px" height="185px" border='3' alt='pexels-pixabay-48137' /></a>
+                    </div>
                 </div>
 
+
+                <!-- Quotes -->
+                <h3 id="Qoutes">My Favourite Qoutes :</h3>
+                <div class="fav_quotes">
+                    <div class="qoutesQ">
+                        <div class="card">
+                            <div class="container">
+                                <h4>
+                                    <b>
+                                         &#45; Stephen King
+                                    </b>
+                                </h4>
+                                <p>
+                                    'Amateurs sit and wait for inspiration, the rest of us just get up and go to work.'
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qoutesQ">
+                        <div class="card">
+                            <div class="container">
+                                <h4>
+                                    <b>
+                                        &#45; Emily Dickinson
+                                    </b>
+                                </h4>
+                                <p>
+                                    'That it will never come again is what makes life so sweet.'
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qoutesQ">
+                        <div class="card">
+                            <div class="container">
+                                <h4>
+                                    <b>
+                                        &#45; George Eliot
+                                    </b>
+                                </h4>
+                                <p>
+                                    'It is never too late to be what you might have been.'
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Websites -->
+                <h3> My Favourite Websites :</h3>
                 <div class="tables_fav_websites">
-                    <table>
-                        <h3> My Favourite Websites :</h3>
+                    <table class="table table-responsive">
+
                         <tr>
-                            <th>Education</th>
-                            <th>Entertainment </th>
-                            <th>Personal Portfolio </th>
+                            <th>Learning Portal</th>
+                            <th>Leisurely Browsing</th>
+                            <th>People's Portfolio</th>
 
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://www.w3schools.com/">W3school</a>
+                                <a target="_blank" href="https://www.w3schools.com/">W3school</a>
                             </td>
                             <td>
-                                <a href="https://www.flightradar24.com/"> Flight Radar 24</a>
+                                <a target="_blank" href="https://www.flightradar24.com/"> Flight Radar 24</a>
                             </td>
 
                             <td>
-                                <a href="https://kaisermann.me/">Christian Kaisermann</a>
+                                <a target="_blank" href="https://kaisermann.me/">Christian Kaisermann</a>
                             </td>
-                            <tr>
-                                <td>
-                                    <a href="https://www.javatpoint.com/">JavaPoint</a>
-                                </td>
-                                <td>
-                                    <a href="https://www.wikipedia.org/">Wikipedia</a>
-                                </td>
-
-                                <td>
-                                    <a href="https://davideperozzi.com/">Davide Perozzi</a>
-                                </td>
-                            </tr>
                         </tr>
+                        <tr>
+                            <td>
+                                <a target="_blank" href="https://www.javatpoint.com/">JavaPoint</a>
+                            </td>
+                            <td>
+                                <a target="_blank" href="https://www.wikipedia.org/">Wikipedia</a>
+                            </td>
+
+                            <td>
+                                <a target="_blank" href="https://davideperozzi.com/">Davide Perozzi</a>
+                            </td>
+                        </tr>
+
                     </table>
                 </div>
 
             </div>
 
+
+
+
+
+
         </div>
-
-
-
 
     </div>
 
 
+    <div class="footer" id="Contact">
+
+        <p>Author: Mohammed Shakir</p>
+        <p><a href="mailto:shakirmsq@gmail.com">shakirmsq@gmail.com</a></p>
+    </div>
 
 
     <script src="script.js">
